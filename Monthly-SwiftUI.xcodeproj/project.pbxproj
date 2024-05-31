@@ -20,6 +20,11 @@
 		7E451AA12C0A348F00AAC64A /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7E451AA02C0A348F00AAC64A /* FirebaseAppDistribution-Beta */; };
 		7E451AA32C0A348F00AAC64A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7E451AA22C0A348F00AAC64A /* FirebaseAuth */; };
 		7E451AA52C0A348F00AAC64A /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7E451AA42C0A348F00AAC64A /* FirebaseAuthCombine-Community */; };
+		7E451AA82C0A3CCA00AAC64A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E451AA72C0A3CCA00AAC64A /* RegisterView.swift */; };
+		7E451AAE2C0A458000AAC64A /* RegisterHeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E451AAD2C0A458000AAC64A /* RegisterHeaderTextField.swift */; };
+		7E451AB12C0A467800AAC64A /* RegisterHeaderSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E451AB02C0A467800AAC64A /* RegisterHeaderSecureField.swift */; };
+		7E451AB32C0A49E800AAC64A /* RegisterHeaderPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E451AB22C0A49E800AAC64A /* RegisterHeaderPhoto.swift */; };
+		7EB93B9A2C0A505100436463 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB93B992C0A505100436463 /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		7E18CF152C090A6800852A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E18CF182C090A6800852A6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E451A932C0A1EB400AAC64A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E451AA72C0A3CCA00AAC64A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7E451AAD2C0A458000AAC64A /* RegisterHeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeaderTextField.swift; sourceTree = "<group>"; };
+		7E451AB02C0A467800AAC64A /* RegisterHeaderSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeaderSecureField.swift; sourceTree = "<group>"; };
+		7E451AB22C0A49E800AAC64A /* RegisterHeaderPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeaderPhoto.swift; sourceTree = "<group>"; };
+		7EB93B992C0A505100436463 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,8 @@
 		7E18CF202C090A8E00852A6D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7E451AAA2C0A3F9E00AAC64A /* Components */,
+				7E451AA62C0A3C2C00AAC64A /* Authentication */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -132,6 +144,41 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		7E451AA62C0A3C2C00AAC64A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7E451AAF2C0A464600AAC64A /* RegisterComponents */,
+				7EB93B982C0A4A2700436463 /* View */,
+				7EB93B992C0A505100436463 /* RegisterViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7E451AAA2C0A3F9E00AAC64A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7E451AAF2C0A464600AAC64A /* RegisterComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7E451AAD2C0A458000AAC64A /* RegisterHeaderTextField.swift */,
+				7E451AB02C0A467800AAC64A /* RegisterHeaderSecureField.swift */,
+				7E451AB22C0A49E800AAC64A /* RegisterHeaderPhoto.swift */,
+			);
+			name = RegisterComponents;
+			sourceTree = "<group>";
+		};
+		7EB93B982C0A4A2700436463 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E451AA72C0A3CCA00AAC64A /* RegisterView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E451AA82C0A3CCA00AAC64A /* RegisterView.swift in Sources */,
 				7E18CF142C090A6600852A6D /* ContentView.swift in Sources */,
+				7EB93B9A2C0A505100436463 /* RegisterViewModel.swift in Sources */,
+				7E451AB32C0A49E800AAC64A /* RegisterHeaderPhoto.swift in Sources */,
 				7E18CF122C090A6600852A6D /* Monthly_SwiftUIApp.swift in Sources */,
+				7E451AAE2C0A458000AAC64A /* RegisterHeaderTextField.swift in Sources */,
+				7E451AB12C0A467800AAC64A /* RegisterHeaderSecureField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -335,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -361,7 +413,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +443,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
