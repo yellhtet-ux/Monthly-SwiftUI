@@ -11,8 +11,6 @@ struct RegisterView: View {
     
     @State var photoPickerPresented = false
     @State var name : String = ""
-    @State var email: String = ""
-    @State var password: String = ""
     @State var phone : String = ""
     
     @StateObject private var viewModel = RegisterViewModel()
@@ -25,8 +23,8 @@ struct RegisterView: View {
                     // Register process related components
                     VStack(alignment: .leading,spacing: 10) {
                         RegisterHeaderTextField(headerName: "Name",text: $name)
-                        RegisterHeaderTextField(headerName: "Email Address",text: $email)
-                        RegisterHeaderSecureField(headerName: "Password",secureText: $password)
+                        RegisterHeaderTextField(headerName: "Email Address",text: $viewModel.email)
+                        RegisterHeaderSecureField(headerName: "Password",secureText: $viewModel.password)
                         RegisterHeaderTextField(headerName: "Phone", text: $phone)
                             .keyboardType(.numberPad)
                         RegisterHeaderPhoto(headerName: "Photo",userSelectedImage: $viewModel.userChoosedImage)
@@ -34,15 +32,14 @@ struct RegisterView: View {
                     
                     // Register button
                     Button(action: {
-                        print("Register button got pressed")
+                        Task {
+                            try await viewModel.registerUser()
+                        }
                     }, label: {
                         Text("Register")
-                            .font(.title2)
-                            .foregroundColor(.black)
+                            .modifier(AuthButtonModifier())
                     })
-                    .frame(minWidth: 350, minHeight: 42)
-                    .background(Color.orange)
-                    .padding(.top,20)
+                    
                     
                     Spacer()
                 }

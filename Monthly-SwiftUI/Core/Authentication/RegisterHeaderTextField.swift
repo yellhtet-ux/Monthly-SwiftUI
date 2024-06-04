@@ -12,13 +12,14 @@ struct RegisterHeaderTextField: View {
     @Binding var text: String 
     var body: some View {
         Text(headerName)
-            .font(.title)
-            .foregroundColor(.black)
+            .font(.title3)
+            .foregroundColor(.uniTextfieldHeader)
         
         TextField("", text: $text)
             .padding()
             .frame(width: 350, height: 40)
-            .background(Color.gray.opacity(0.1))
+            .textInputAutocapitalization(.none)
+            .background(Color.uniTextfield)
             .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

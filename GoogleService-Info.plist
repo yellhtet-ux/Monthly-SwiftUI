@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyD3Nv6C3dCxHujTze6biClgbaPZ4e80F5A</string>
+	<string>AIzaSyDEhY6N5FmOyQkq-L56JeW6MyqyvM_nM34</string>
 	<key>GCM_SENDER_ID</key>
-	<string>937712704792</string>
+	<string>864743960976</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.andrew.com.Monthly-SwiftUI</string>
 	<key>PROJECT_ID</key>
-	<string>monthly-swiftui</string>
+	<string>monthly-swiftui-dd3ca</string>
 	<key>STORAGE_BUCKET</key>
-	<string>monthly-swiftui.appspot.com</string>
+	<string>monthly-swiftui-dd3ca.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:937712704792:ios:78ace65f0ecb6798dfd26d</string>
+	<string>1:864743960976:ios:2215c6a82529e986260315</string>
 </dict>
 </plist>
